@@ -30,12 +30,11 @@
 <!-- ============================= STATS (3 cards · one palette) ============================= -->
 <div align="center">
 
-<img height="165" src="https://github-readme-stats-two-lemon-36.vercel.app/api?username=Asura-lab&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1126&title_color=a78bfa&icon_color=a78bfa&cb=4" alt="stats" />
-<img height="165" src="https://github-readme-stats-two-lemon-36.vercel.app/api/top-langs/?username=Asura-lab&layout=compact&theme=tokyonight&hide_border=true&langs_count=6&hide=html,css,jupyter%20notebook&bg_color=0d1126&title_color=a78bfa&cb=5" alt="top languages" />
+<img src="https://streak-stats.demolab.com/?user=Asura-lab&theme=tokyonight&hide_border=true&background=0D1126&ring=A78BFA&fire=A78BFA&currStreakLabel=A78BFA&sideLabels=A78BFA" alt="contribution streak" />
 
 <br/>
 
-<img src="https://streak-stats.demolab.com/?user=Asura-lab&theme=tokyonight&hide_border=true&background=0D1126&ring=A78BFA&fire=A78BFA&currStreakLabel=A78BFA&sideLabels=A78BFA" alt="streak" />
+<img height="150" src="https://github-readme-stats-two-lemon-36.vercel.app/api/top-langs/?username=Asura-lab&layout=compact&theme=tokyonight&hide_border=true&langs_count=6&hide=html,css,jupyter%20notebook&bg_color=0d1126&title_color=a78bfa&cb=5" alt="top languages" />
 
 </div>
 
@@ -45,7 +44,7 @@
 <div align="center">
 
 <a href="https://github.com/Asura-lab/Forex-Signal-App"><img src="https://github-readme-stats-two-lemon-36.vercel.app/api/pin/?username=Asura-lab&repo=Forex-Signal-App&theme=tokyonight&hide_border=true&bg_color=0d1126&title_color=a78bfa&icon_color=a78bfa&cb=4" alt="Predictrix" /></a>
-<a href="https://github.com/Asura-lab/3D-Portfolio"><img src="https://github-readme-stats-two-lemon-36.vercel.app/api/pin/?username=Asura-lab&repo=3D-Portfolio&theme=tokyonight&hide_border=true&bg_color=0d1126&title_color=a78bfa&icon_color=a78bfa&cb=4" alt="3D Portfolio" /></a>
+<a href="https://github.com/Asura-lab/diplom"><img src="https://github-readme-stats-two-lemon-36.vercel.app/api/pin/?username=Asura-lab&repo=diplom&theme=tokyonight&hide_border=true&bg_color=0d1126&title_color=a78bfa&icon_color=a78bfa&cb=4" alt="diplom" /></a>
 
 </div>
 
@@ -76,6 +75,6 @@
 
 <br/>
 
-<sub>a wanderer in the data cosmos · ASURA</sub>
+<em>a wanderer in the data cosmos</em> &nbsp;·&nbsp; <b>ASURA</b>
 
 </div>
