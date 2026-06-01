@@ -31,7 +31,7 @@
 <div align="center">
 
 <img height="165" src="https://github-readme-stats-two-lemon-36.vercel.app/api?username=Asura-lab&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1126&title_color=a78bfa&icon_color=a78bfa&cb=4" alt="stats" />
-<img height="165" src="https://github-readme-stats-two-lemon-36.vercel.app/api/top-langs/?username=Asura-lab&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&bg_color=0d1126&title_color=a78bfa&cb=4" alt="top languages" />
+<img height="165" src="https://github-readme-stats-two-lemon-36.vercel.app/api/top-langs/?username=Asura-lab&layout=compact&theme=tokyonight&hide_border=true&langs_count=6&hide=html,css,jupyter%20notebook&bg_color=0d1126&title_color=a78bfa&cb=5" alt="top languages" />
 
 <br/>
 
@@ -71,6 +71,7 @@
 <br/><br/>
 
 <a href="mailto:asurajims@gmail.com"><img src="https://img.shields.io/badge/say%20hi-A78BFA?style=flat-square&logo=gmail&logoColor=white" alt="email" /></a>
+<a href="https://www.instagram.com/_mediing/"><img src="https://img.shields.io/badge/Instagram-A78BFA?style=flat-square&logo=instagram&logoColor=white" alt="instagram" /></a>
 <a href="https://github.com/Asura-lab"><img src="https://img.shields.io/badge/GitHub-0d1126?style=flat-square&logo=github&logoColor=white" alt="github" /></a>
 
 <br/>
