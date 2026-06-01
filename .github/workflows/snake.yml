@@ -4,7 +4,7 @@ on:
   # Өдөр бүр шинэчилнэ
   schedule:
     - cron: "0 0 * * *"
-  # Гараар ажиллуулах боломж (Actions таб → Run workflow)
+  # Гараар ажиллуулах (Actions таб → Run workflow)
   workflow_dispatch:
   # main руу push хийх бүрд
   push:
@@ -17,13 +17,13 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Generate snake SVG (light + dark)
+      - name: Generate snake SVG (cosmic themed)
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg?color_snake=#a78bfa&color_dots=#161b22,#3b2a5a,#6d4aa6,#9a6cff,#c8b6ff
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#a78bfa&color_dots=#0d1126,#3b2a5a,#6d4aa6,#9a6cff,#c8b6ff
 
       - name: Push to the output branch
         uses: crazy-max/ghaction-github-pages@v4
