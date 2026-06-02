@@ -30,7 +30,7 @@
 <!-- ============================= STATS (3 cards · one palette) ============================= -->
 <div align="center">
 
-<img src="https://streak-stats.demolab.com/?user=Asura-lab&theme=tokyonight&hide_border=true&background=0D1126&ring=A78BFA&fire=A78BFA&currStreakLabel=A78BFA&sideLabels=A78BFA" alt="contribution streak" />
+<img src="https://raw.githubusercontent.com/Asura-lab/Asura-lab/contrib-card/contrib-card.svg" alt="contribution stats — total contributions (private included), current & longest streak" />
 
 <br/>
 

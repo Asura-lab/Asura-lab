@@ -1,0 +1,42 @@
+name: Generate Contribution Card
+
+on:
+  # 6 цаг тутамд шинэчилнэ
+  schedule:
+    - cron: "0 */6 * * *"
+  # Гараар ажиллуулах (Actions таб → Run workflow)
+  workflow_dispatch:
+  # main руу push хийх бүрд
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build contribution card (total incl. private + streaks)
+        env:
+          # PRIVATE contribution-ийг тоолохын тулд өөрийн PAT шаардлагатай.
+          # Settings → Secrets and variables → Actions → New repository secret:
+          #   нэр: CONTRIB_TOKEN  ·  утга: classic PAT (read:user)
+          GH_TOKEN: ${{ secrets.CONTRIB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+        run: python .github/scripts/contrib_card.py
+
+      - name: Publish SVG to the contrib-card branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: contrib-card
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
