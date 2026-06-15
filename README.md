@@ -14,6 +14,10 @@
 <em>watch the universe breathe,</em><br/>
 <em>and build quiet little worlds.</em>
 
+<br/><br/>
+
+<a href="https://asura-motion.vercel.app"><img src="https://img.shields.io/badge/live%20portfolio-asura--motion.vercel.app-A78BFA?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0d1126" alt="live portfolio" /></a>
+
 </div>
 
 ---
