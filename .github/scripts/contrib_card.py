@@ -16,6 +16,7 @@ require the token; see .github/workflows/contrib-card.yml).
 import json
 import os
 import sys
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -122,8 +123,23 @@ def gql(query: str, variables: dict) -> dict:
             "User-Agent": f"{USER}-contrib-card",
         },
     )
-    with urllib.request.urlopen(req, timeout=30) as r:
-        payload = json.load(r)
+    last_error = None
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                payload = json.load(r)
+            break
+        except urllib.error.HTTPError as e:
+            last_error = e
+            if e.code not in (429, 500, 502, 503, 504) or attempt == 3:
+                raise
+        except urllib.error.URLError as e:
+            last_error = e
+            if attempt == 3:
+                raise
+        time.sleep(2 ** attempt)
+    else:
+        raise RuntimeError(f"GitHub API request failed after retries: {last_error}")
     if "errors" in payload:
         raise RuntimeError("GitHub API errors: " + json.dumps(payload["errors"])[:300])
     return payload["data"]
